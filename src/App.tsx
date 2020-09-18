@@ -60,15 +60,15 @@ export class TreeExample extends React.Component<any, ITreeExampleState> {
 
 const INITIAL_STATE: ITreeNode[] = [];
 
-for(let i = 0; i < 100; i++) {
+for(let i = 0; i < 500; i++) {
 	let directory: any = {
-        id: i * 100,
+        id: i * 500,
         hasCaret: true,
         icon: "folder-close",
         label: `Directory ${i + 1}`,
 		childNodes: [],
     };
-	for(let j = 0; j < 100; j++) {
+	for(let j = 0; j < 500; j++) {
 		directory.childNodes.push({
 			id: i * 100 + j,
 			icon: "document",
